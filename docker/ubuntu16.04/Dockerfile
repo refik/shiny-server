@@ -62,10 +62,10 @@ RUN apt-get update && apt-get install -y \
     libxt-dev \
     libssl-dev \
     libxml2-dev \
-    cmake \
+    cmake
     # Pro-specific
-    libpam0g-dev \
-    openjdk-8-jre
+    #   libpam0g-dev \
+    #   openjdk-8-jre
 
 # Download and install shiny server
 RUN wget --no-verbose https://s3.amazonaws.com/rstudio-shiny-server-os-build/ubuntu-12.04/x86_64/VERSION -O "version.txt" && \
